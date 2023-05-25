@@ -13,6 +13,13 @@ const addNewProductService = async (
   return responseService;
 };
 
+const getAllProductsService = async (): Promise<unknown[]> => {
+  const allProducts = await ProductModel.findAll();
+
+  return allProducts;
+};
+
 export default {
   addNewProductService,
+  getAllProductsService,
 };
