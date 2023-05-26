@@ -9,7 +9,7 @@ const addNewProductService = async (
 
   const responseService: ServiceResponse<Product> = { 
     status: 'SUCCESSFUL', data: createdProduct.dataValues };
-
+    
   return responseService;
 };
 
